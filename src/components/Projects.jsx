@@ -41,7 +41,7 @@ const projects = [
     type: "React + Tailwind",
     desc: "Personal developer portfolio built with React and Tailwind CSS — featuring a dark theme, project showcase, skills section, and a working contact form.",
     tech: ["React", "Tailwind CSS"],
-    demo: "#",
+    demo: "https://portfolio-nine-beryl-19.vercel.app/",
     github: "https://github.com/Rayan-Ahmed-developer",
   },
   {
