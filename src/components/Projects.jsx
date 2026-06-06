@@ -5,10 +5,10 @@ const projects = [
   {
     title: "User Inquiry System",
     type: "MERN Stack",
-    desc: "Full-stack inquiry platform with user authentication, form submissions, and a complete admin dashboard to manage and respond to all queries.",
-    tech: ["MongoDB", "Express", "React", "Node.js", "JWT"],
+    desc: "CRUD-based Inquiry System that allows users to submit and manage inquiries with database integration using a full-stack architecture.",
+    tech: ["MongoDB", "Express", "React", "Node.js"],
     demo: "https://user-inquiry.vercel.app/",
-    github: "https://github.com/Rayan-Ahmed-developer",
+    github: "https://github.com/Rayan-Ahmed-developer/User_Inquiry",
   },
   {
     title: "E-Commerce Website",
@@ -16,7 +16,7 @@ const projects = [
     desc: "Complete e-commerce solution with product listings, cart, checkout, JWT-based auth, and a full admin panel for managing products, orders, and users.",
     tech: ["MongoDB", "Express", "React", "Node.js", "JWT", "Admin Panel"],
     demo: "https://mobile-e-commerce-s5p7.vercel.app/",
-    github: "https://github.com/Rayan-Ahmed-developer",
+    github: "https://github.com/Rayan-Ahmed-developer/Mobile-E-Commerce",
   },
   {
     title: "Task Manager",
@@ -24,7 +24,7 @@ const projects = [
     desc: "Productivity app to create, assign, and track tasks with deadlines, priority levels, and team member assignment — all with a clean dashboard.",
     tech: ["MongoDB", "Express", "React", "Node.js", "JWT"],
     demo: "https://task-manager-two-tau-40.vercel.app/",
-    github: "https://github.com/Rayan-Ahmed-developer",
+    github: "https://github.com/Rayan-Ahmed-developer/Task-Manager",
   },
 
   // ── React + Tailwind ─────────────────────────
@@ -34,7 +34,7 @@ const projects = [
     desc: "Minimal yet powerful todo app with add, edit, delete tasks, priority tagging, and smart filter options to stay organised.",
     tech: ["React", "Tailwind CSS"],
     demo: "https://to-do-list-rho-pearl-81.vercel.app/",
-    github: "https://github.com/Rayan-Ahmed-developer",
+    github: "https://github.com/Rayan-Ahmed-developer/To-Do-List-",
   },
   {
     title: "Portfolio Website",
@@ -42,7 +42,7 @@ const projects = [
     desc: "Personal developer portfolio built with React and Tailwind CSS — featuring a dark theme, project showcase, skills section, and a working contact form.",
     tech: ["React", "Tailwind CSS"],
     demo: "https://portfolio-nine-beryl-19.vercel.app/",
-    github: "https://github.com/Rayan-Ahmed-developer",
+    github: "https://github.com/Rayan-Ahmed-developer/portfolio",
   },
   {
     title: "Calculator",
@@ -50,7 +50,7 @@ const projects = [
     desc: "Clean, functional calculator with all basic arithmetic operations, polished minimal UI, and keyboard support.",
     tech: ["React", "Tailwind CSS"],
     demo: "https://calculator-xrdn.vercel.app/",
-    github: "https://github.com/Rayan-Ahmed-developer",
+    github: "https://github.com/Rayan-Ahmed-developer/Calculator",
   },
 
   // ── JavaScript ───────────────────────────────
@@ -60,7 +60,7 @@ const projects = [
     desc: "Real-time weather app showing temperature, humidity, wind speed, and conditions for any city using OpenWeatherMap API.",
     tech: ["HTML", "CSS", "JavaScript", "API"],
     demo: "https://weather-website-nine-rho.vercel.app/",
-    github: "https://github.com/Rayan-Ahmed-developer",
+    github: "https://github.com/Rayan-Ahmed-developer/Weather-Website",
   },
   {
     title: "Currency Converter",
@@ -68,7 +68,7 @@ const projects = [
     desc: "Instant currency converter using live exchange rates API — supports dozens of currencies with a clean two-column interface.",
     tech: ["HTML", "CSS", "JavaScript", "API"],
     demo: "https://currency-converter-nine-sand.vercel.app/",
-    github: "https://github.com/Rayan-Ahmed-developer",
+    github: "https://github.com/Rayan-Ahmed-developer/Currency-Converter",
   },
   {
     title: "Rock Paper Scissors",
@@ -76,7 +76,7 @@ const projects = [
     desc: "Classic game against the computer with animated results, live score tracking, round history, and a reset option.",
     tech: ["HTML", "CSS", "JavaScript"],
     demo: "https://rps-game-six-rouge.vercel.app/",
-    github: "https://github.com/Rayan-Ahmed-developer",
+    github: "https://github.com/Rayan-Ahmed-developer/rps-game",
   },
 ]
 
