@@ -49,9 +49,7 @@ const About = () => {
               <span className="flex items-center gap-2 text-gray-400 text-[13px] font-medium px-[14px] py-2 rounded-[9px] border border-white/[0.06] bg-[#15151e]">
                 🎓 CS Student
               </span>
-              <span className="flex items-center gap-2 text-gray-400 text-[13px] font-medium px-[14px] py-2 rounded-[9px] border border-white/[0.06] bg-[#15151e]">
-                💼 Fresher
-              </span>
+             
             </div>
 
             {/* Skill tags */}

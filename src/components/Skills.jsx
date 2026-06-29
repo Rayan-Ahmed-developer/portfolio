@@ -61,6 +61,7 @@ const skillGroups = [
       { name: 'GitHub',  logo: 'GH', bg: '#ffffff10', color: '#cccccc' },
       { name: 'VS Code', logo: 'VS', bg: '#007acc18', color: '#007acc' },
       { name: 'Postman', logo: 'PM', bg: '#ff6c3718', color: '#ff6c37' },
+      { name: 'Vercel',  logo: 'V',  bg: '#00000018', color: '#007d3a' },
     ],
   },
 ]
