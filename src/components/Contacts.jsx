@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 const contactLinks = [
   {
@@ -73,16 +74,21 @@ const Contact = () => {
     'bg-[#15151e] border border-white/10 focus:border-violet-500 rounded-[10px] px-4 py-3 text-sm text-white placeholder-gray-500 outline-none transition-colors w-full'
 
   return (
-    <section id="contact" className="py-20 bg-gray-950 px-6">
+    <motion.section 
+      id="contact" 
+      className="py-20 bg-gray-950 px-6"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="max-w-5xl mx-auto">
-
         <p className="text-xs font-bold tracking-[2.5px] uppercase text-violet-400 mb-2">Contact</p>
         <h2 className="font-clash text-4xl font-bold tracking-tight text-white mb-10">
           Let's work together
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-
           {/* Left — Info */}
           <div>
             <p className="text-[14.5px] text-gray-400 leading-[1.85] mb-8">
@@ -96,7 +102,7 @@ const Contact = () => {
                   href={link.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-3 px-4 py-3 rounded-[11px] border border-white/[0.06] bg-[#15151e] hover:border-violet-500/30 hover:bg-violet-500/[0.04] hover:translate-x-[3px] transition-all duration-200 no-underline"
+                  className="flex items-center gap-3 px-4 py-3 rounded-[11px] border border-white/[0.06] bg-[#15151e] hover:border-violet-500/35 hover:bg-violet-500/[0.04] hover:translate-x-[3px] transition-all duration-200 no-underline"
                 >
                   <div
                     className="w-9 h-9 rounded-[9px] flex items-center justify-center flex-shrink-0"
@@ -165,10 +171,9 @@ const Contact = () => {
               </div>
             )}
           </form>
-
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

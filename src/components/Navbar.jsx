@@ -1,18 +1,25 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const navLinks = [
-  { label: 'Home',     href: '#home' },
-  { label: 'About',    href: '#about' },
-  { label: 'Skills',   href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact',  href: '#contact' },
+  { label: 'Home',      href: '#home' },
+  { label: 'About',     href: '#about' },
+  { label: 'Skills',    href: '#skills' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects',  href: '#projects' },
+  { label: 'Contact',   href: '#contact' },
 ]
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#08080d]/90 border-b border-white/[0.06] backdrop-blur-xl">
+    <motion.nav 
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="fixed top-0 left-0 right-0 z-50 bg-[#08080d]/90 border-b border-white/[0.06] backdrop-blur-xl"
+    >
       <div className="w-full px-6 flex items-center justify-between h-[60px]">
 
         {/* Logo */}
@@ -23,25 +30,33 @@ const Navbar = () => {
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-1 list-none m-0 p-0">
-          {navLinks.map((link) => (
-            <li key={link.label}>
+          {navLinks.map((link, index) => (
+            <motion.li 
+              key={link.label}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+            >
               <a
                 href={link.href}
                 className="text-gray-400 hover:text-white hover:bg-white/[0.05] text-[13.5px] font-medium px-[14px] py-[7px] rounded-[8px] transition-all no-underline"
               >
                 {link.label}
               </a>
-            </li>
+            </motion.li>
           ))}
         </ul>
 
         {/* Hire Me CTA */}
-        <a
+        <motion.a
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, delay: 0.6 }}
           href="#contact"
           className="hidden md:flex items-center bg-violet-600 hover:bg-violet-500 hover:-translate-y-[1px] text-white text-[13.5px] font-semibold px-5 py-[9px] rounded-[10px] transition-all no-underline"
         >
           Hire Me
-        </a>
+        </motion.a>
 
         {/* Mobile toggle */}
         <button
@@ -53,28 +68,37 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      {open && (
-        <div className="md:hidden bg-[#08080d] px-6 py-4 flex flex-col gap-1 border-t border-white/[0.06]">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={() => setOpen(false)}
-              className="text-gray-400 hover:text-white text-[14px] font-medium py-2.5 no-underline transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
-          <a
-            href="#contact"
-            onClick={() => setOpen(false)}
-            className="mt-2 bg-violet-600 hover:bg-violet-500 text-white text-[14px] font-semibold py-3 rounded-[10px] text-center no-underline transition-colors"
+      <AnimatePresence>
+        {open && (
+          <motion.div 
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+            className="md:hidden bg-[#08080d] px-6 py-4 flex flex-col gap-1 border-t border-white/[0.06]"
           >
-            Hire Me
-          </a>
-        </div>
-      )}
-    </nav>
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="text-gray-400 hover:text-white text-[14px] font-medium py-2.5 no-underline transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+
+            <a
+              href="#contact"
+              onClick={() => setOpen(false)}
+              className="mt-2 bg-violet-600 hover:bg-violet-500 text-white text-[14px] font-semibold py-3 rounded-[10px] text-center no-underline transition-colors"
+            >
+              Hire Me
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.nav>
   )
 }
 

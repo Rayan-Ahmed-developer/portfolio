@@ -1,4 +1,4 @@
-import React from 'react'
+import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
@@ -10,7 +10,12 @@ const Hero = () => {
       <div className="absolute bottom-0 right-[-50px] w-[340px] h-[340px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(56,189,248,0.06) 0%, transparent 65%)' }} />
 
-      <div className="max-w-[680px]">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        className="max-w-[680px]"
+      >
 
         {/* Badge */}
         <div className="inline-flex items-center gap-2 border border-green-400/25 bg-green-400/[0.06] text-green-400 text-[12px] font-semibold px-[14px] py-[5px] rounded-full mb-7 tracking-[0.3px]">
@@ -33,7 +38,7 @@ const Hero = () => {
 
         {/* Role */}
         <p className="text-[17px] font-medium text-gray-400 mb-5 tracking-[0.2px]">
-          <span className="text-violet-400 font-semibold">MERN Stack Developer</span>
+          <span className="text-violet-400 font-semibold">Full Stack Developer &amp; Next.js Developer</span>
           {' '}— building web apps that actually work.
         </p>
 
@@ -79,7 +84,7 @@ const Hero = () => {
           </a>
         </div>
 
-      </div>
+      </motion.div>
     </section>
   )
 }
