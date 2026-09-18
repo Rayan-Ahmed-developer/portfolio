@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const highlights = [
   'Collaborated with Python/FastAPI developers on AI integration across client-facing projects',
-  'Contributed frontend work to real-world products — including a "Gaming Zone" platform and an AI-powered "Crop Chat" assistant',
+  'Contributed frontend work to real-world client-facing web projects, including AI-powered applications and other production-ready products',
   'Worked on proposals for integrating AI features into client projects',
   'Built and polished UI components using React/Next.js',
   'Handled day-to-day communication and coordination across teams',
