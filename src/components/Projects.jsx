@@ -4,8 +4,8 @@ const mainProjects = [
   {
     title: 'AI Resume Analyzer',
     type: 'Next.js',
-    desc: 'AI-powered resume analyzer with a freemium model — 3 free analyses using Google Gemini AI, Pro upgrade through Lemon Squeezy, webhook-based subscription verification, anonymous user tracking, and no login required.',
-    tech: ['Next.js', 'Google Gemini AI', 'Lemon Squeezy', 'MongoDB', 'Webhook'],
+    desc: 'AI-powered resume analyzer with a freemium model — 3 free analyses using Google Gemini AI, Pro upgrade through Safepay, webhook-based subscription verification, anonymous user tracking, and no login required.',
+    tech: ['Next.js', 'Google Gemini AI', 'Safepay', 'MongoDB', 'Webhook'],
     demo: 'https://ai-resume-sigma-two.vercel.app/',
     github: 'https://github.com/Rayan-Ahmed-developer/AI-Resume',
   },
@@ -22,7 +22,7 @@ const mainProjects = [
     type: 'Next.js',
     desc: 'Standalone payment gateway integrating Safepay for secure online transactions, including webhook-based payment confirmation.',
     tech: ['Next.js', 'Safepay', 'MongoDB', 'Webhook'],
-    demo: 'https://vercel.com/rayan-ahmed-s-projects/payment-gateway',
+    demo: 'https://payment-gateway-nine-kappa.vercel.app/',
     github: 'https://github.com/Rayan-Ahmed-developer/Payment-gateway',
   },
   {
@@ -89,7 +89,6 @@ const techColors = {
   'Node.js': { bg: '#68a06318', color: '#68a063' },
   'Next.js': { bg: '#ffffff18', color: '#ffffff' },
   'Google Gemini AI': { bg: '#4285f418', color: '#4285f4' },
-  'Lemon Squeezy': { bg: '#ffc23318', color: '#ffc233' },
   Safepay: { bg: '#00c85318', color: '#00c853' },
   JWT: { bg: '#fbbf2418', color: '#fbbf24' },
   'Admin Panel': { bg: '#a392ff18', color: '#a392ff' },

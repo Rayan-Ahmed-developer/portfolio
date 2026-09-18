@@ -43,7 +43,7 @@ const contactLinks = [
   {
     label: 'WhatsApp',
     value: 'Message me directly',
-    href: 'https://wa.me/',
+    href: 'https://wa.me/923453275006',
     iconBg: 'rgba(52,211,153,0.10)',
     iconBorder: 'rgba(52,211,153,0.2)',
     icon: (
